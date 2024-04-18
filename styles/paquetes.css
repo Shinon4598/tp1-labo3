@@ -8,8 +8,8 @@
     font-size: 90px;
     color: var(--primary);
 }
-.card-img{
-    position: relative;
+.card{
+    margin: 30px auto;
 }
 .card-img::after{
     position: absolute;
@@ -18,5 +18,19 @@
     color: white;
     font-weight: bold;
     top: 13px;
+    right: 13px;
+}
+.card-img.oferta::after{
+    content: "$949";
+    text-decoration: line-through;
+    color: gray;
+}
+.card-img.oferta::before{
+    position: absolute;
+    content: "$699"; 
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    top: 43px; 
     right: 13px;
 }
