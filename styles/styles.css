@@ -29,9 +29,6 @@ a{
     text-decoration: none;
     color: var(--secondary);
 }
-a:hover{
-    text-decoration: underline;
-}
 .color-secondary{
     color: var(--secondary);
 }
@@ -65,6 +62,10 @@ a:hover{
 
 .navbar {
     background-color: rgba(13, 0, 36, 0.6);
+}
+.nav-item:hover{
+    background-color: var(--primary-subtle);
+    border-radius: 10px;
 }
 .overlay {
     position: fixed;
