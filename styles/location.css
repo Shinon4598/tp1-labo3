@@ -1,0 +1,15 @@
+.head{
+    height: 40vh;
+    background-color: var(--secondary-subtle);
+}
+.head_texto{
+    height: 100%;
+    width: 100%;
+    font-size: 90px;
+    color: var(--primary);
+}
+.head_icon{
+    position: absolute;
+    bottom: 70%;
+    left: 35%;
+}
