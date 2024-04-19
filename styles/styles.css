@@ -85,7 +85,7 @@ a{
     transition: all 0.3s;
 }
 .animation-bicycle:hover{
-    transform: rotate(-30deg);
+    transform: rotate(360deg);
 }
 .card {
     min-width: 300px;
