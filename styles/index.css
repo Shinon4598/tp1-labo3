@@ -6,11 +6,23 @@
 .head_texto{
     width: 100vw;
     height: 100vh;
-    
+}
+.head_texto h1{
+    font-size: 3.5rem;
 }
 section{
     margin: 150px 0;
 }
 .badge-with-icon{
     top: -122.5px;
+}
+.card-img{
+    height: 200px;
+    width: 70%;
+    margin: 0 auto;
+}
+.card-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

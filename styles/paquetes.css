@@ -11,26 +11,29 @@
 .card{
     margin: 30px auto;
 }
-.card-img::after{
-    position: absolute;
-    content: "$949";
-    font-size: 26px;
-    color: white;
-    font-weight: bold;
-    top: 13px;
-    right: 13px;
+.card-body .text-start{
+    position: relative;
 }
-.card-img.oferta::after{
-    content: "$949";
-    text-decoration: line-through;
-    color: gray;
-}
-.card-img.oferta::before{
+
+.price{
     position: absolute;
-    content: "$699"; 
+    background-color: var(--primary);
     font-size: 26px;
-    color: white;
-    font-weight: bold;
-    top: 43px; 
-    right: 13px;
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    top: -100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.card:hover .price{
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: scale(1.1);
+}
+.card-img img{
+    transition: transform 0.3s ease;
+}
+.card-img:hover img{
+    filter: brightness(0.5);
 }
