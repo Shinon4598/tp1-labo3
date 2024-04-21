@@ -1,12 +1,10 @@
-
 .head_texto{
-    width: 100vw;
-    height: 100vh;
     top: 150px;
     left: 90px;
 }
+
 .head_texto h1{
-    font-size: 120px;
+    font-size: clamp(8vw, 7vh, 18vh);
     font-weight: 700;
     position: relative;
 }
@@ -23,15 +21,20 @@
     animation: expand-border 2s ease 1.8s;
     animation-fill-mode: forwards;
 }
-.text-title::before{
+.head{
+    position: relative;
+}
+.head::before{
     content: "Loremipsum & consectetur\A consectetur";
     white-space: pre;
     position: absolute;
     text-transform: capitalize;
     height: 3px;
-    font-size: 26px;
-    right: 30%;
-    bottom: -200%;
+    font-size: clamp(1.5vw, 2.5vh, 4vh);
+    right: 10em;
+    bottom: 10em;
+    color: var(--primary);
+    animation: text 2s ease;
 }
 @keyframes text-title {
     0%{
@@ -89,4 +92,57 @@
 .card:hover::before{
     bottom: -20%;
     left: 0;
+}
+@keyframes text{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-title {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes expand-border {
+    50%{
+        width: 4em;
+    }
+    100%{
+        width: 2em;
+    }
+}
+@media (max-width: 768px){
+    .head_texto{
+        left: 30px;
+    }
+    .text-title::before{
+        right: -20vw;
+    }
+}
+
+@media (max-width: 540px){
+    .head_texto{
+        left: 5px;
+    }
+    .head::before{
+        left: 10%;
+        bottom: 35%;
+    }
+    .container-fluid{
+        padding: 0%;
+    }
+    .card-body .text-end{
+        text-align: start;
+    }
 }
