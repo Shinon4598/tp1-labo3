@@ -1,11 +1,16 @@
-
-.head {
-    height: 100vh;
-    min-height: 500px;
+.navbar-toggler{
+    position: absolute;
+    right: 20px;
 }
+
 .head_texto{
     width: 100vw;
     height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .head_texto h1{
     font-size: 3.5rem;
@@ -47,7 +52,7 @@ section{
 }
 .text-title{
     animation-name: text-title;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
@@ -79,6 +84,10 @@ section{
         transform: translateY(50px);
         letter-spacing: 3px;
     }
+    80% {
+        transform: translateY(50px);
+        letter-spacing: 1px;
+    }
     100%{
         transform: translateY(0);
         letter-spacing: 0px;
@@ -86,7 +95,7 @@ section{
 }
 .text{
     animation-name: text;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: ease-in;
 
 }
@@ -148,5 +157,10 @@ section{
     .badge-with-icon{
         position: absolute;
         top: -50px;
+    }
+    .card-img img{
+        width: 100%;
+        height: 100%;
+
     }
 }

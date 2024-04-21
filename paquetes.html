@@ -14,63 +14,70 @@
     <div class="overlay"></div>
     <nav class="navbar navbar-expand-lg bg-opacity-50  fixed-top navbar-scrolled">
         <div class="container-fluid">
-            <a href="./index.html" class="navbar-brand text-light "><span class="text-warning">U</span>na <span
+            <a href="./index.html" class="navbar-brand text-light fs-3 "><span class="text-warning">U</span>na <span
                     class="text-warning">V</span>uelta
                 <img src="/img/header-breeze.svg" class="icon-breeze" alt="breeze">
                 <i class="bi bi-bicycle text-warning rotate-bicycle"></i>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div>
+                <input type="checkbox" class="navbar-toggler" type="che" data-bs-toggle="collapse" aria-controls="navbarNav" aria-label="Toggle navigation"></input>
+
+            </div>
+            
+            
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse  ">
             <ul class="navbar-nav navbar-nav-scroll ">
-                <li class="nav-item">
-                    <a class="nav-link active text-light " aria-current="page" href="#section1">Turísmo</a>
+                <li class="nav-item d-flex flex-column align-items-center">
+                    <i class="bi bi-geo-alt text-warning fs-4"></i>
+                    <a class="nav-link text-light " href="./location.html">Destinos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light " href="#">¿Donde quedarme?</a>
+                <li class="nav-item d-flex flex-column align-items-center">
+                    <i class="bi bi-bag text-warning fs-4"></i>
+                    <a class="nav-link text-light " href="./paquetes.html">Paquetes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light " href="#">¿Donde comer?</a>
+                <li class="nav-item d-flex flex-column align-items-center">
+                    <i class="bi bi-telephone text-warning fs-4"></i>
+                    <a class="nav-link text-light " href="./index.html#contacto">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
     
-    <header class="head justify-content-center align-content-center d-flex ">
-        <div class="d-flex justify-content-start  align-items-center">
-            <h1 class="text-white ">Paquetes</h1>
+    <header class="head">
+        <div class=" text-light head_texto">
+                <h1 class="text-title text-uppercase ">Paquetes</h1>
+        </div>
+        <div class="container h-10">
         </div>
     </header>
-    <h2 class="header mt-2  text-center text-white bg-secundario fs-1">Nuestros paquetes más populares!</h2>
-
     <main class="text-center bg-white pb-5 "> 
-        <section class="container justify-content-center" id="section2">
-            <div class="card-group m-2 gap-4 ">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
+        <section class="justify-content-center  m-md-2 m-0" id="section2">
+            <h2 class="bg-secundario color_primary p-4 fs-1 ">DESTINOS MÁS POPULARES</h2>
+            <div class="card-group m-md-2 gap-4 m-0 ">
+                <div class="card mx-0 d-flex " style="width: 18rem;">
+                    <div class="card-img ">
                         <div class="card-img_overlay"></div>
                         <img src="/img/card-1.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
+                        <span class="price">Desde: $119.000</span>
+
                     </div>
-                    <div class="card-body row p-5">
-                        <div class="col-md-6 text-start ">
+                    <div class="card-body row p-5 p-sm-2 ">
+                        <div class="col-xl-6 col-12 text-start">
                             <div class="d-flex text-secondary gap-2 ">
                                 <i class="bi bi-globe"></i>
                                 <p>Argentina</p>
                             </div>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-xl-6 col-12 text-xl-end text-start">
                             <i class="bi bi-star text-warning "></i>                            
                             <i class="bi bi-star text-warning "></i>                           
                             <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                            
-
+                            <i class="bi bi-star text-warning "></i>   
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
                             <h5 class="card-title">Buenos Aires</h5>
                             <p class="card-text text-secondary">MARZO 2025</p>
                             <div class="row">
@@ -94,19 +101,21 @@
                         </form>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
+                <div class="card mx-0 d-flex " style="width: 18rem;">
+                    <div class="card-img ">
                         <div class="card-img_overlay"></div>
                         <img src="/img/card-2.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
+                        <span class="price">Desde: $119.000</span>
+
                     </div>
-                    <div class="card-body row p-5">
+                    <div class="card-body row p-5 p-sm-2 ">
                         <div class="col-md-6 text-start ">
                             <div class="d-flex text-secondary gap-2 ">
                                 <i class="bi bi-globe"></i>
                                 <p>Argentina</p>
                             </div>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-xl-6 col-12 text-xl-end text-start">
                             <i class="bi bi-star text-warning "></i>                            
                             <i class="bi bi-star text-warning "></i>                           
                             <i class="bi bi-star text-warning "></i>                            
@@ -115,7 +124,6 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
                             <h5 class="card-title">Buenos Aires</h5>
                             <p class="card-text text-secondary">MARZO 2025</p>
                             <div class="row">
@@ -139,19 +147,20 @@
                         </form>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
+                <div class="card mx-0 d-flex " style="width: 18rem;">
+                    <div class="card-img ">
                         <div class="card-img_overlay"></div>
                         <img src="/img/card-3.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
+                        <span class="price">Desde: $119.000</span>
                     </div>
-                    <div class="card-body row p-5">
+                    <div class="card-body row p-5 p-sm-2 ">
                         <div class="col-md-6 text-start ">
                             <div class="d-flex text-secondary gap-2 ">
                                 <i class="bi bi-globe"></i>
                                 <p>Argentina</p>
                             </div>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-xl-6 col-12 text-xl-end text-start">
                             <i class="bi bi-star text-warning "></i>                            
                             <i class="bi bi-star text-warning "></i>                           
                             <i class="bi bi-star text-warning "></i>                            
@@ -160,7 +169,6 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
                             <h5 class="card-title">Buenos Aires</h5>
                             <p class="card-text text-secondary">MARZO 2025</p>
                             <div class="row">
@@ -185,158 +193,24 @@
                     </div>
                 </div>
             </div>
-            <div class="card-group m-2 gap-4 ">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
-                        <div class="card-img_overlay"></div>
-                        <img src="/img/card-4.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
-                    </div>
-                    <div class="card-body row p-5">
-                        <div class="col-md-6 text-start ">
-                            <div class="d-flex text-secondary gap-2 ">
-                                <i class="bi bi-globe"></i>
-                                <p>Argentina</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                           
-                            <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                            
-
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
-                            <h5 class="card-title">Buenos Aires</h5>
-                            <p class="card-text text-secondary">MARZO 2025</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="text-secondary">Aereo</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="text-secondary">7 noches</p>
-                                </div>
-                            </div>
-                            <div class="d-flex text-secondary gap-2 ">
-                                <i class="bi bi-sunglasses"></i>
-                                <p>Desayuno</p>
-                            </div>
-                            <p class="text-secondary ">Incluye: <br>
-                                AEREO DESDE BS AS -  INCLUYE EQUIPAJE <br>TRASLADOS EN DESTINO ASISTENCIA AL VIAJERO 07 <br>NOCHES DE ALOJAMIENTO <br>MEDIA PENSION PRECIO BASE DOBLE POR PERSONA </p>
-                        </div>
-                        
-                        <form action="/index.html">
-                            <button class="btn btn-warning fs-5" type="submit">Consultar</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
-                        <div class="card-img_overlay"></div>
-                        <img src="/img/card-5.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
-                    </div>
-                    <div class="card-body row p-5">
-                        <div class="col-md-6 text-start ">
-                            <div class="d-flex text-secondary gap-2 ">
-                                <i class="bi bi-globe"></i>
-                                <p>Argentina</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                           
-                            <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                            
-
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
-                            <h5 class="card-title">Buenos Aires</h5>
-                            <p class="card-text text-secondary">MARZO 2025</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="text-secondary">Aereo</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="text-secondary">7 noches</p>
-                                </div>
-                            </div>
-                            <div class="d-flex text-secondary gap-2 ">
-                                <i class="bi bi-sunglasses"></i>
-                                <p>Desayuno</p>
-                            </div>
-                            <p class="text-secondary ">Incluye: <br>
-                                AEREO DESDE BS AS -  INCLUYE EQUIPAJE <br>TRASLADOS EN DESTINO ASISTENCIA AL VIAJERO 07 <br>NOCHES DE ALOJAMIENTO <br>MEDIA PENSION PRECIO BASE DOBLE POR PERSONA </p>
-                        </div>
-                        
-                        <form action="/index.html">
-                            <button class="btn btn-warning fs-5" type="submit">Consultar</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
-                        <div class="card-img_overlay"></div>
-                        <img src="/img/card-6.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
-                    </div>
-                    <div class="card-body row p-5">
-                        <div class="col-md-6 text-start ">
-                            <div class="d-flex text-secondary gap-2 ">
-                                <i class="bi bi-globe"></i>
-                                <p>Argentina</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                           
-                            <i class="bi bi-star text-warning "></i>                            
-                            <i class="bi bi-star text-warning "></i>                            
-
-                            <i class="bi bi-star"></i>
-                        </div>
-                        <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
-                            <h5 class="card-title">Buenos Aires</h5>
-                            <p class="card-text text-secondary">MARZO 2025</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="text-secondary">Aereo</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="text-secondary">7 noches</p>
-                                </div>
-                            </div>
-                            <div class="d-flex text-secondary gap-2 ">
-                                <i class="bi bi-sunglasses"></i>
-                                <p>Desayuno</p>
-                            </div>
-                            <p class="text-secondary ">Incluye: <br>
-                                AEREO DESDE BS AS -  INCLUYE EQUIPAJE <br>TRASLADOS EN DESTINO ASISTENCIA AL VIAJERO 07 <br>NOCHES DE ALOJAMIENTO <br>MEDIA PENSION PRECIO BASE DOBLE POR PERSONA </p>
-                        </div>
-                        
-                        <form action="/index.html">
-                            <button class="btn btn-warning fs-5" type="submit">Consultar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <!--Promociones-->
             <h2 class="bg-secundario color_primary p-4 fs-1 ">¡ PROMOCIONES !</h2>
             <div class="card-group m-2 gap-4 ">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
+                <div class="card mx-0 d-flex " style="width: 18rem;">
+                    <div class="card-img">
                         <div class="card-img_overlay"></div>
                         <img src="/img/card-1.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
+                        <span class="price fw-bold oferta" data-value="20%">$95.200 <span class="text-decoration-line-through fw-light ">$119.000</span></span>
+
                     </div>
-                    <div class="card-body row p-5">
+                    <div class="card-body row p-5 p-sm-2 ">
                         <div class="col-md-6 text-start ">
                             <div class="d-flex text-secondary gap-2 ">
                                 <i class="bi bi-globe"></i>
                                 <p>Argentina</p>
                             </div>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-xl-6 col-12 text-xl-end text-start">
                             <i class="bi bi-star text-warning "></i>                            
                             <i class="bi bi-star text-warning "></i>                           
                             <i class="bi bi-star text-warning "></i>                            
@@ -345,12 +219,11 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
                             <h5 class="card-title">Buenos Aires</h5>
                             <p class="card-text text-secondary">MARZO 2025</p>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p class="text-secondary">Aereo</p>
+                                    <p class="text-secondary" >Aereo</p>
                                 </div>
                                 <div class="col-md-6">
                                     <p class="text-secondary">7 noches</p>
@@ -369,19 +242,21 @@
                         </form>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
+                <div class="card mx-0 d-flex " style="width: 18rem;">
+                    <div class="card-img">
                         <div class="card-img_overlay"></div>
                         <img src="/img/card-2.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
+                        <span class="price fw-bold oferta" data-value="30%">$83.300 <span class="text-decoration-line-through fw-light ">$119.000</span></span>
+
                     </div>
-                    <div class="card-body row p-5">
+                    <div class="card-body row p-5 p-sm-2 ">
                         <div class="col-md-6 text-start ">
                             <div class="d-flex text-secondary gap-2 ">
                                 <i class="bi bi-globe"></i>
                                 <p>Argentina</p>
                             </div>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-xl-6 col-12 text-xl-end text-start">
                             <i class="bi bi-star text-warning "></i>                            
                             <i class="bi bi-star text-warning "></i>                           
                             <i class="bi bi-star text-warning "></i>                            
@@ -390,7 +265,6 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
                             <h5 class="card-title">Buenos Aires</h5>
                             <p class="card-text text-secondary">MARZO 2025</p>
                             <div class="row">
@@ -414,19 +288,22 @@
                         </form>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img oferta">
+                <div class="card mx-0 d-flex " style="width: 18rem;">
+                    <div class="card-img">
                         <div class="card-img_overlay"></div>
+
                         <img src="/img/card-3.webp" class="card-img-top img-fluid " alt="teatro municipal san nicolas">
+                        <span class="price fw-bold oferta" data-value="30%">$83.300 <span class="text-decoration-line-through fw-light ">$119.000</span></span>
+
                     </div>
-                    <div class="card-body row p-5">
+                    <div class="card-body row p-5 p-sm-2 ">
                         <div class="col-md-6 text-start ">
                             <div class="d-flex text-secondary gap-2 ">
                                 <i class="bi bi-globe"></i>
                                 <p>Argentina</p>
                             </div>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-xl-6 col-12 text-xl-end text-start">
                             <i class="bi bi-star text-warning "></i>                            
                             <i class="bi bi-star text-warning "></i>                           
                             <i class="bi bi-star text-warning "></i>                            
@@ -435,7 +312,6 @@
                             <i class="bi bi-star"></i>
                         </div>
                         <div class="text-start">
-                            <span class="price">Desde: $119.000</span>
                             <h5 class="card-title">Buenos Aires</h5>
                             <p class="card-text text-secondary">MARZO 2025</p>
                             <div class="row">

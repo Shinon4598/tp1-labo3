@@ -1,14 +1,56 @@
-.head{
-    height: 40vh;
-    background-color: var(--secondary-subtle);
-}
-.head_texto{
-    height: 100%;
-    width: 100%;
-    font-size: 90px;
-    color: var(--primary);
-}
 
+.head_texto{
+    width: 100vw;
+    height: 100vh;
+    top: 150px;
+    left: 90px;
+}
+.head_texto h1{
+    font-size: 120px;
+    font-weight: 700;
+    position: relative;
+}
+.text-title{
+    position: absolute;
+    animation: text-title 2s ease;
+}
+.text-title::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary);
+    display: block;
+    animation: expand-border 2s ease 1.8s;
+    animation-fill-mode: forwards;
+}
+.text-title::before{
+    content: "Loremipsum & consectetur\A consectetur";
+    white-space: pre;
+    position: absolute;
+    text-transform: capitalize;
+    height: 3px;
+    font-size: 26px;
+    right: 30%;
+    bottom: -200%;
+}
+@keyframes text-title {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes expand-border {
+    50%{
+        width: 36%;
+    }
+    100%{
+        width: 20%;
+    }
+}
 .card::after{
     position: absolute;
     content: "Ver detalles";

@@ -1,30 +1,104 @@
-.head{
-    height: 40vh;
-    background-color: var(--secondary-subtle);
-}
+
 .head_texto{
-    height: 100%;
-    width: 100%;
-    font-size: 90px;
-    color: var(--primary);
+    top: 150px;
+    left: 90px;
 }
-.card{
+
+/*
+1em = 16px
+1vw = 1% of viewport width
+1rem = 1em of root element
+*/
+
+.head_texto h1{
+    font-size: clamp(8vw, 7vh, 18vh);
+    font-weight: 700;
+    position: relative;
+}
+.text-title{
+    position: absolute;
+    animation: text-title 2s ease;
+}
+.text-title::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary);
+    display: block;
+    animation: expand-border 2s ease 1.8s;
+    animation-fill-mode: forwards;
+}
+.head{
+    position: relative;
+}
+.head::before{
+    content: "Loremipsum & consectetur\A consectetur";
+    white-space: pre;
+    position: absolute;
+    text-transform: capitalize;
+    height: 3px;
+    font-size: clamp(1.5vw, 2.5vh, 4vh);
+    right: 10em;
+    bottom: 10em;
+    color: var(--primary);
+    animation: text 2s ease;
+}
+@keyframes text{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-title {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes expand-border {
+    50%{
+        width: 4em;
+    }
+    100%{
+        width: 2em;
+    }
+}
+d_texto{
     margin: 30px auto;
 }
 .card-body .text-start{
     position: relative;
 }
+.card-img{
+    position: relative;
 
+}
 .price{
-    position: absolute;
     background-color: var(--primary);
     font-size: 26px;
     display: block;
     border-radius: 5px;
-    width: 100%;
+top: 150px;
     top: -100px;
     text-align: center;
     transition: all 0.3s ease;
+}
+.oferta::before{
+    content : attr(data-value);
+    padding: 0 5px;
+    margin-right: 13px;
+    border-radius: 10px;
+    color: red;
+    border: 3px solid red;
 }
 .card:hover .price{
     background-color: var(--secondary);
@@ -36,4 +110,159 @@
 }
 .card-img:hover img{
     filter: brightness(0.5);
+}
+@media (max-width: 1145px){
+    .price{
+        top: -150px;
+    }
+}
+@media (max-width: 768px){
+    .head_texto{
+        left: 30px;
+    }
+    .text-title::before{
+        right: -20vw;
+    }
+}
+
+@media (max-width: 540px){
+}
+
+/*
+1em = 16px
+1vw = 1% of viewport width
+1rem = 1em of root element
+*/
+
+.head_texto h1{
+    font-size: clamp(8vw, 7vh, 18vh);
+    font-weight: 700;
+    position: relative;
+}
+.text-title{
+    position: absolute;
+    animation: text-title 2s ease;
+}
+.text-title::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary);
+    display: block;
+    animation: expand-border 2s ease 1.8s;
+    animation-fill-mode: forwards;
+}
+.head{
+    position: relative;
+}
+.head::before{
+    content: "Loremipsum & consectetur\A consectetur";
+    white-space: pre;
+    position: absolute;
+    text-transform: capitalize;
+    height: 3px;
+    font-size: clamp(1.5vw, 2.5vh, 4vh);
+    right: 10em;
+    bottom: 10em;
+    color: var(--primary);
+    animation: text 2s ease;
+}
+@keyframes text{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-title {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes expand-border {
+    50%{
+        width: 4em;
+    }
+    100%{
+        width: 2em;
+    }
+}
+.card{
+    margin: 30px auto;
+}
+.card-body .text-start{
+    position: relative;
+}
+.card-img{
+    position: relative;
+
+}
+.price{
+    background-color: var(--primary);
+    font-size: 26px;
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    top: -100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.oferta::before{
+    content : attr(data-value);
+    padding: 0 5px;
+    margin-right: 13px;
+    border-radius: 10px;
+    color: red;
+    border: 3px solid red;
+}
+.card:hover .price{
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: scale(1.1);
+}
+.card-img img{
+    transition: transform 0.3s ease;
+}
+.card-img:hover img{
+    filter: brightness(0.5);
+}
+@media (max-width: 1145px){
+    .price{
+        top: -150px;
+    }
+}
+@media (max-width: 768px){
+    .head_texto{
+        left: 30px;
+    }
+    .text-title::before{
+        right: -20vw;
+    }
+}
+.card{
+    flex: 1 0 0%;
+}
+@media (max-width: 540px){
+    .head_texto{
+        left: 5px;
+    }
+    .head::before{
+        left: 10%;
+        bottom: 35%;
+    }
+    .container-fluid{
+        padding: 0%;
+    }
+    .card-body .text-end{
+        text-align: start;
+    }
 }
