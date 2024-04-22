@@ -34,8 +34,8 @@ section{
     background-position: center;
     padding: 150px 0;
 }
-.contacto h2{
-    font-size: 3.5rem;
+#section1 a, #section2 a{
+    color: var(--secondary);
 }
 .circulo-icono{
     width: 120px;
