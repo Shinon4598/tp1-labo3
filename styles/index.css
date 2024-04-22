@@ -1,19 +1,15 @@
-.navbar-toggler{
-    position: absolute;
-    right: 20px;
-}
+
 
 .head_texto{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .head_texto h1{
-    font-size: 3.5rem;
+    font-size: clamp(4vw, 4vh, 10vh);
 }
 section{
     margin: 150px 0;
@@ -94,6 +90,7 @@ section{
     }
 }
 .text{
+    font-size: clamp(2vw, 2vh, 4vh);
     animation-name: text;
     animation-duration: 2s;
     animation-timing-function: ease-in;
@@ -142,12 +139,32 @@ section{
     left: 20%;
 }
 
+#consejos{
+    background-image: url('../img/bg_consejos.webp');
+    background-size: cover;
+    height: 90vh;
+    border-radius: 0 50% 50% 0;
+}
+.consejos_texto{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 50px 0;
+    border-radius: 50%;
+    width: 30vw;
+    box-shadow:  0px 0px 75px 70px rgb(255, 255, 255, 0.6);
+}
+.consejos_avion{
+    width: 20vw;
+    transform:rotate(20deg);
+}
 @media (max-width: 991px){
     .main-section_title::after{
         display: none;
     }
 }
 @media (max-width: 720px){
+    .head_texto h1{
+        width: 70vw;
+    }
     .main-section{
         position: relative;
     }
@@ -162,5 +179,11 @@ section{
         width: 100%;
         height: 100%;
 
+    }
+    .consejos_texto{
+        width: 100%;
+    }
+    #consejos{
+        border-radius: 0;
     }
 }

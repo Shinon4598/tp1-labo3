@@ -18,27 +18,36 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-opacity-50  fixed-top navbar-scrolled">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand text-light fs-3 "><span class="text-warning">U</span>na <span
+            <a href="./index.html" class="navbar-brand text-light fs-3 "><span class="text-warning">U</span>na <span
                     class="text-warning">V</span>uelta
                 <img src="/img/header-breeze.svg" class="icon-breeze" alt="breeze">
                 <i class="bi bi-bicycle text-warning rotate-bicycle"></i>
             </a>
-
-            <div>
-                <input type="checkbox" class="navbar-toggler" type="che" data-bs-toggle="collapse" aria-controls="navbarNav" aria-label="Toggle navigation"></input>
-            </div>
+            
         </div>
-        <div class="collapse navbar-collapse  ">
-            <ul class="navbar-nav navbar-nav-scroll ">
-                <li class="nav-item d-flex flex-column align-items-center">
+        
+        <input type="checkbox" class="navbar-toggler" type="che" data-bs-toggle="collapse" aria-controls="navbarNav" aria-label="Toggle navigation"></input>
+        <label for="checkbox" class="toggle-icon" data-open="☰" data-close="✖"></label>
+
+        <div class="navbar-responsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
                     <i class="bi bi-geo-alt text-warning fs-4"></i>
                     <a class="nav-link text-light " href="./location.html">Destinos</a>
                 </li>
-                <li class="nav-item d-flex flex-column align-items-center">
+                <li class="nav-item">
                     <i class="bi bi-bag text-warning fs-4"></i>
                     <a class="nav-link text-light " href="./paquetes.html">Paquetes</a>
                 </li>
-                <li class="nav-item d-flex flex-column align-items-center">
+                <li class="nav-item">
+                    <i class="bi bi-people text-warning fs-4"></i>
+                    <a class="nav-link text-light " href="#reseñas">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                    <i class="bi bi-book text-warning fs-4"></i>
+                    <a class="nav-link text-light " href="#consejos">Consejos</a>
+                </li>
+                <li class="nav-item">
                     <i class="bi bi-telephone text-warning fs-4"></i>
                     <a class="nav-link text-light " href="#contacto">Contacto</a>
                 </li>
@@ -50,7 +59,7 @@
         <div class="text-center text-light head_texto">
                 <h1 class="text-title"><span class="text-warning ">U</span>na <span class="text-warning ">V</span>uelta <i class="bi bi-bicycle text-warning animation-bicycle"></i> por <span
                     class="text-warning ">el mundo</span> </h1>
-            <p class="text-bg-warning bg-opacity-25  text-light fs-3 text">Es hora de tu próxima aventura. Déjanos planearla por ti.
+            <p class="text-bg-warning bg-opacity-25  text-light text">Es hora de tu próxima aventura. Déjanos planearla por ti.
             </p>
             <form action="#info-ciudad">
                 <button class="btn btn-outline-warning fs-4 text btn-aparece" type="submit">Comenzemos</button>
@@ -61,8 +70,8 @@
     </header>
     <!--Contenido Principal-->
     <main class="text-center container-lg  bg-white  rounded-5 pb-5 px-0 " id="info-ciudad">
-        <section class="container row" style="margin: 15px auto;">
-            <h2 class="m-4 color-secondary">Sobre Nosotros</h2>
+        <section class="container row text-center ">
+            <h2 class="color-secondary mt-4 ">Sobre Nosotros</h2>
             <p>Una Vuelta es una Empresa de Viajes y Turismo, en la cual cada detalle ha sido pensado y creado para proporcionarle lo mejor. Para ello contamos con un equipo joven y experimentado dispuesto a llegar donde las necesidades de nuestros clientes exijan. Más de 20 años trabajando para que sus viajes sean una experiencia incomparable. Generar un marco de calidad, confianza y seguridad con el cliente es nuestra misión.</p>
             <div class="col-md-3">
                 <img src="/img/info-location.gif" class="info-icon" alt="location">
@@ -121,7 +130,7 @@
             </a>
         </section>
         <!--Reseñas-->
-        <section class="container  py-4">
+        <section class="container" id="reseñas">
             <h2 class="fs-1 mb-5">Clientes sastisfechos</h2>
             <div class="card-group m-2">
                  <div class="card border-0 ">
@@ -178,6 +187,21 @@
                 </div>
             </div>
         </div>
+        </section>
+        <!--Consejos-->
+        <section class="container-fluid  overflow-hidden " id="consejos">
+            <div class="align-content-center h-100">
+                <div class="consejos_texto align-content-center ">
+                    <h2>Consejos de viaje</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores similique sit dicta eaque, nemo maiores, iusto unde, exercitationem saepe a repudiandae. </p>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores similique sit dicta eaque, nemo maiores, iusto unde, exercitationem saepe a repudiandae. Consequuntur labore dolorem accusamus obcaecati repellat, et fugit fugiat.</p>
+                
+                    <button class="btn btn-danger w-25">Leer más</button>
+
+                </div>
+            </div>
+                
         </section>
         <!--Contacto-->
         <section class="contacto" id="contacto">

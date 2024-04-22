@@ -82,16 +82,6 @@ d_texto{
     position: relative;
 
 }
-.price{
-    background-color: var(--primary);
-    font-size: 26px;
-    display: block;
-    border-radius: 5px;
-top: 150px;
-    top: -100px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
 .oferta::before{
     content : attr(data-value);
     padding: 0 5px;
@@ -263,3 +253,4 @@ top: 150px;
         text-align: start;
     }
 }
+

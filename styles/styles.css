@@ -3,6 +3,7 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    max-width: 100%;
   }
 
 body{
@@ -16,6 +17,17 @@ body{
     padding: 0%;
 }
 
+/*nav-item*/
+/*d-flex flex-column align-items-center*/
+.navbar-responsive{
+    position: static;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 :root {
     --primary: #FFC107;
     --primary-subtle: #ffc10791;
@@ -62,7 +74,6 @@ a{
 .head_texto {
     position: absolute;
 }
-
 .navbar {
     background-color: rgba(13, 0, 36, 0.6);
 }
@@ -89,9 +100,6 @@ a{
 
 }
 
-.card {
-    min-width: 270px;
-}
 
 .card .card-img-top{
     height: 300px;
@@ -178,4 +186,82 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbar-toggler{
+    position: absolute;
+    right: 20px;
+}
+
+@media (max-width: 992px){
+    
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.toggle-icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    transition: right 0.5s;
+
+}
+.toggle-icon::after {
+    content: attr(data-open);
+    color: var(--primary);
+    font-size: 30px;
+}
+
+.navbar-toggler:checked {
+    display: block;
+    position: absolute;
+    right: 60%;
+    top: 0%;
+}
+
+.navbar-toggler:checked + .toggle-icon {
+    right: 60%;
+    top: -3%;
+}
+
+.navbar-toggler:checked + .toggle-icon::after {
+    content: attr(data-close);
+    background-color: var(--secondary);
+    
+}
+
+.nav-item {
+    flex-direction: row;
+    padding: 30px;
+}
+.navbar-toggler:checked ~ .navbar-responsive {
+    animation: slideNavbar 0.5s ease forwards;
+}
+.navbar-responsive {
+    position: absolute;
+    top: 0px;
+    background-color: var(--secondary);
+    position: fixed;
+    height: 100vh;
+    width: 60%;
+    right: -60%;
+}
+
+@keyframes slideNavbar {
+    0% {
+        right: -60%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
 }
