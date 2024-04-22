@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="/location.html" as="document">
+    <!--Preload-->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" as="style" crossorigin="crossorigin">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="preload" href="/styles/styles.css" as="style">
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <link rel="preload" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="font" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/index.css">
+
+    <link rel="preload" href="/img/banner.webp" as="image">
+
     <title>Document</title>
 </head>
 
@@ -21,7 +36,7 @@
         <div class="container-fluid">
             <a href="./index.html" class="navbar-brand text-light fs-3 "><span class="text-warning">U</span>na <span
                     class="text-warning">V</span>uelta
-                <img src="/img/header-breeze.svg" class="icon-breeze" alt="breeze">
+                <img  src="/img/header-breeze.svg" class="icon-breeze" alt="breeze">
                 <i class="bi bi-bicycle text-warning rotate-bicycle"></i>
             </a>
 
@@ -82,22 +97,34 @@
                 experiencia incomparable. Generar un marco de calidad, confianza y seguridad con el cliente es nuestra
                 misión.</p>
             <div class="col-md-3">
-                <img src="/img/info-location.gif" class="info-icon" alt="location">
+                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                    <source src="/img/info-location.webm" type="video/webm">
+                    <img src="/img/info-location.gif" alt="gif localidad">
+                </video>
                 <h3 class="color-secondary">Destinos</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
             <div class="col-md-3">
-                <img src="/img/info-bench.gif" class="info-icon" alt="bench">
+                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                    <source src="/img/info-bench.webm" type="video/webm">
+                    <img loading="lazy" src="/img/info-bench.gif" alt="bench">
+                </video>
                 <h3 class="color-secondary">Naturaleza</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
             <div class="col-md-3">
-                <img src="/img/info-home.gif" class="info-icon" alt="home">
+                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                    <source src="/img/info-home.webm" type="video/webm">
+                    <img loading="lazy" src="/img/info-home.gif" alt="home">
+                </video>
                 <h3 class="color-secondary">Alojamiento</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
             <div class="col-md-3">
-                <img src="/img/info-museum.gif" class="info-icon" alt="museum">
+                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                    <source src="/img/info-home.webm" type="video/webm">
+                    <img loading="lazy" src="/img/info-museum.gif" alt="museum">
+                </video>
                 <h3 class="color-secondary">Historia</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
@@ -114,7 +141,7 @@
                         <h2 class="color-secondary">Nuestros Destinos</h2>
                     </div>
                     <div class="col-md-6 main-section_img">
-                        <img class="img-fluid rounded-5" src="/img/card-6.webp" alt="imagen turismo">
+                        <img loading="lazy" class="img-fluid rounded-5" src="/img/card-6.webp" alt="imagen turismo">
                     </div>
                 </div>
             </a>
@@ -124,7 +151,7 @@
             <a href="#" class="link-offset-2-hover ">
                 <div class="row">
                     <div class="col-md-6 main-section_img">
-                        <img class="img-fluid rounded-5" src="/img/card-3.webp" alt="imagen turismo">
+                        <img loading="lazy" class="img-fluid rounded-5" src="/img/card-3.webp" alt="imagen turismo">
                     </div>
                     <div class="col-md-6 main-section_title">
                         <div class="badge-with-icon">
@@ -144,7 +171,7 @@
                 <div class="card border-0 ">
 
                     <div class="card-img d-flex align-items-center justify-content-center ">
-                        <img class="rounded-4 h-75 " src="/img/cliente-1.webp" alt="cliente bien happy"
+                        <img loading="lazy" class="rounded-4 h-75 " src="/img/cliente-1.webp" alt="cliente bien happy"
                             style="width:100%; height:auto;">
                     </div>
 
@@ -163,8 +190,8 @@
 
                 </div>
                 <div class="card border-0 ">
-                    <div class="card-img d-flex align-items-center justify-content-center ">
-                        <img class="rounded-4 h-75 " src="/img/cliente-2.webp" alt="cliente bien happy"
+                    <div  class="card-img d-flex align-items-center justify-content-center ">
+                        <img loading="lazy" class="rounded-4 h-75 " src="/img/cliente-2.webp" alt="cliente bien happy"
                             style="width:100%; height:auto;">
                     </div>
                     <div class="card-body row">
@@ -182,7 +209,7 @@
                     </div>
                 </div>
                 <div class="card border-0 ">
-                    <div class="card-img d-flex align-items-center justify-content-center ">
+                    <div loading="lazy" class="card-img d-flex align-items-center justify-content-center ">
                         <img class="rounded-4 h-75 " src="/img/cliente-3.webp" alt="cliente bien happy"
                             style="width:100%; height:auto;">
                     </div>
@@ -288,7 +315,7 @@
                         <div class="col-md-6">
                             <button class="btn btn-warning mt-4 mt-md-0 ">Casa Central</button>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, eveniet.</p>
-                            <iframe
+                            <iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.3609203529754!2d-60.22301548518674!3d-33.33551948080701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7678fbc230da5%3A0x9732316f868f9d7d!2sDon+Bosco+20%2C+San+Nicol%C3%A1s+de+Los+Arroyos%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1501011676025"
                                 width="100%" height="420" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                         </div>
