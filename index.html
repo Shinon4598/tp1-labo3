@@ -7,18 +7,18 @@
 
 
     <!--Prefetch-->
-    <link rel="prefetch" href="/location.html" as="document">
+    <link rel="prefetch" href="/location.html">
     <!--Preload-->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" as="style" crossorigin="crossorigin">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" as="style"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="preload" href="/styles/styles.css" as="style">
     <link rel="stylesheet" href="/styles/styles.css">
 
-    <link rel="preload" href="/styles/index.css">
+    <link rel="preload" href="/styles/index.css" as="style">
     <link rel="stylesheet" href="/styles/index.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="font" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -36,14 +36,15 @@
         <div class="container-fluid">
             <a href="./index.html" class="navbar-brand text-light fs-3 "><span class="text-warning">U</span>na <span
                     class="text-warning">V</span>uelta
-                <img  src="/img/header-breeze.svg" class="icon-breeze" alt="breeze">
+                <img src="/img/header-breeze.svg" class="icon-breeze" alt="breeze">
                 <i class="bi bi-bicycle text-warning rotate-bicycle"></i>
             </a>
 
         </div>
 
         <input type="checkbox" class="navbar-toggler" type="che" data-bs-toggle="collapse" aria-controls="navbarNav"
-            aria-label="Toggle navigation"></input>
+            label="Mostrar/ocultar menú de navegación
+            aria-label=" Toggle navigation"></input>
         <label for="checkbox" class="toggle-icon" data-open="☰" data-close="✖"></label>
 
         <div class="navbar-responsive">
@@ -95,32 +96,37 @@
                 experiencia incomparable. Generar un marco de calidad, confianza y seguridad con el cliente es nuestra
                 misión.</p>
             <div class="col-md-3">
-                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                <video class="info-icon" loading="lazy" autoplay loop muted playsinline>
                     <source src="/img/info-location.webm" type="video/webm">
+                    <track src="/img/info-location.webm" kind="subtitles" srclang="es" label="Español">
                     <img src="/img/info-location.gif" alt="gif localidad">
+
                 </video>
                 <h3 class="color-secondary">Destinos</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
             <div class="col-md-3">
-                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                <video class="info-icon" loading="lazy" autoplay loop muted playsinline>
                     <source src="/img/info-bench.webm" type="video/webm">
+                    <track src="/img/info-bench.webm" kind="subtitles" srclang="es" label="Español">
                     <img loading="lazy" src="/img/info-bench.gif" alt="bench">
                 </video>
                 <h3 class="color-secondary">Naturaleza</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
             <div class="col-md-3">
-                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                <video class="info-icon" loading="lazy" autoplay loop muted playsinline>
                     <source src="/img/info-home.webm" type="video/webm">
+                    <track src="/img/info-home.webm" kind="subtitles" srclang="es" label="Español">
                     <img loading="lazy" src="/img/info-home.gif" alt="home">
                 </video>
                 <h3 class="color-secondary">Alojamiento</h3>
                 <p>Lorem ipsum dolor sit amet celit. Facilis cumque ipsa error architecto iste!</p>
             </div>
             <div class="col-md-3">
-                <video class="info-icon" loading="lazy"  autoplay loop muted playsinline>
+                <video class="info-icon" loading="lazy" autoplay loop muted playsinline>
                     <source src="/img/info-museum.webm" type="video/webm">
+                    <track src="/img/info-museum.webm" kind="subtitles" srclang="es" label="Español">
                     <img loading="lazy" src="/img/info-museum.gif" alt="museum">
                 </video>
                 <h3 class="color-secondary">Historia</h3>
@@ -188,7 +194,7 @@
 
                 </div>
                 <div class="card border-0 ">
-                    <div  class="card-img d-flex align-items-center justify-content-center ">
+                    <div class="card-img d-flex align-items-center justify-content-center ">
                         <img loading="lazy" class="rounded-4 h-75 " src="/img/cliente-2.webp" alt="cliente bien happy"
                             style="width:100%; height:auto;">
                     </div>
@@ -275,52 +281,37 @@
         </section>
         <section class="container bg-secondary-subtle py-4">
             <h3>Contacto</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <form>
-                        <div class="row mb-3">
-                            <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputNombre">
-                            </div>
+            <form>
+                <div class="row mb-3">
+                    <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputNombre">
+                    </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputApellido" class="col-sm-2 col-form-label">Apellido</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputApellido">
                         </div>
-                        <div class="row mb-3">
-                            <label for="inputApellido" class="col-sm-2 col-form-label">Apellido</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputApellido">
-                            </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail">
                         </div>
-                        <div class="row mb-3">
-                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail">
-                            </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputAsunto" class="col-sm-2 col-form-label">Asunto</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputAsunto">
                         </div>
-                        <div class="row mb-3">
-                            <label for="inputAsunto" class="col-sm-2 col-form-label">Asunto</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputAsunto">
-                            </div>
-                        </div>
-                            <label for="floatingTextarea">Mensaje</label>
-                            <textarea class="form-control" placeholder="Deja el mensaje aquí..."
-                                id="floatingTextarea"></textarea>
-                            <button type="submit" class="btn btn-primary w-100 mt-4 ">Enviar</button>
+                    </div>
+                    <label for="floatingTextarea">Mensaje</label>
+                    <textarea class="form-control" placeholder="Deja el mensaje aquí..." id="floatingTextarea"></textarea>
+                    <button type="submit" class="btn btn-primary w-100 mt-4">Enviar</button>
 
-                        </div>
-                    </form>
-
-                        <div class="col-md-6">
-                            <button class="btn btn-warning mt-4 mt-md-0 ">Casa Central</button>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, eveniet.</p>
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.3609203529754!2d-60.22301548518674!3d-33.33551948080701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7678fbc230da5%3A0x9732316f868f9d7d!2sDon+Bosco+20%2C+San+Nicol%C3%A1s+de+Los+Arroyos%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1501011676025"
-                                width="100%" height="420" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-                        </div>
                 </div>
-                
-            </div>
-
+            </form>
         </section>
     </main>
     <!--Footer-->
